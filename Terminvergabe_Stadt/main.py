@@ -16,16 +16,16 @@ while keineTermineText == voll:
     # driver.get("https://stadt-karlsruhe.saas.smartcjm.com/m/stadt-karlsruhe/extern/calendar/?uid=54f4114e-d167-437b-a0d6-594406f7a0ac")
     driver.get("https://stadt-karlsruhe.saas.smartcjm.com/m/stadt-karlsruhe-standesamt/extern/calendar/?uid=6385cdf9-0825-4d94-bff2-d4f1315f05f1&lang=de")
     # assert "Smart" in driver.title
-
+    sleep(10)
     add_button = driver.find_element("xpath","/html/body/div[2]/div[2]/form/div[3]/div[3]/div/div[1]/div/div/div[2]/span[3]")
     add_button.click()
-
+    sleep(10)
     weiter_button = driver.find_element("xpath","//*[@id='forward-service']")
     weiter_button.click()
-
+    sleep(10)
     second_weiter_button = driver.find_element("xpath","/html/body/div[2]/div[2]/form/div[3]/div[4]/div/div[2]/button[2]")
     second_weiter_button.click()
-
+    sleep(10)
     keineTermineText = "TERMIN FREI!!!"
     
     try:
