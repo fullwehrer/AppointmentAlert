@@ -35,9 +35,6 @@ while keineTermineText == voll:
         keineTermineText = "TERMIN FREI!!! (exc)"
 
     print(str(datetime.now()))
-    winsound.PlaySound("beep.wav", winsound.SND_FILENAME)
-    winsound.PlaySound("beep.wav", winsound.SND_FILENAME)
-    winsound.PlaySound("beep.wav", winsound.SND_FILENAME)
     sleep(60)
 
 print("Termine FREI!!!")
